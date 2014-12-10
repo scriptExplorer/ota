@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://ehoming.cochat.cn/app/install/ehoming.ipa</string>
+					<string>http://182.92.224.228:8081/app/install/ehoming.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
