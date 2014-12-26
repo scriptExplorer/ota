@@ -11,13 +11,13 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://ehoming.cn/app/install/ehoming.ipa</string>
+          <string>http://182.92.224.228:8081/app/install/ehoming.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.ruaho.ehoming.demo</string>
+				<string>com.ruaho.ehoming.pro</string>
 				<key>bundle-version</key>
 				<string>2.0.0</string>
 				<key>kind</key>
