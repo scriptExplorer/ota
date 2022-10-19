@@ -194,7 +194,24 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 线程安全版本 HashMap
 
 ## LinkedHashMap
-TODO
+可以利用LinkedHashMap实现LRU Cache
+ <details><summary>code</summary>
+ <pre><code>
+          class LruCache<A, B> extends LinkedHashMap<A, B> {
+            private final int maxEntries;
+
+            public LruCache(final int maxEntries) {
+                super(maxEntries + 1, 1.0f, true);
+                this.maxEntries = maxEntries;
+            }
+
+            @Override
+            protected boolean removeEldestEntry(final Map.Entry<A, B> eldest) {
+                return super.size() > maxEntries;
+            }
+        }
+ </code></pre>
+</details>
 
 ## Queue
 
