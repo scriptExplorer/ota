@@ -3,6 +3,9 @@
 > 精于心，简于形
 
 <img src="https://www.bigocheatsheet.com/img/big-o-cheat-sheet-poster.png" >
+
+<img width="1067" alt="image" src="https://user-images.githubusercontent.com/824476/196641771-83c367a9-84ce-447b-b16b-e480647aadbe.png">
+
  
  
 ## 数组
