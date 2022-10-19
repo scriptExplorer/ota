@@ -1,8 +1,8 @@
 # Java Data-structure
-===
-
 
 > 精于心，简于形
+
+<img src="https://www.bigocheatsheet.com/img/big-o-cheat-sheet-poster.png" >
  
  
 ## 数组
@@ -11,7 +11,7 @@
 - O(N) search for a particular value in an unsorted array
 - O(logN) search for a value in a sorted array
  
-<details><summary>代码</summary>
+<details><summary>code</summary>
  <pre><code>
         int[] myArray = new int[3];
         for (int i = 0; i < myArray.length; i++) {
@@ -33,7 +33,9 @@ ArrayList底层是用数组实现的，随着元素添加，其大小是动态�
 - O(N) iteration (memory friendly)
 - O(N) search for a particular value in an unsorted List
 
-<details><summary>代码</summary>
+<details><summary>
+ 
+ </summary>
  <pre><code>
         ArrayList<Character> myArrayList = new ArrayList<Character>();
         myArrayList.add('a');
@@ -60,7 +62,7 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
  - O(N) iteration 
  - O(N) search for a particular value in an unsorted List
  
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
        LinkedList<String> linkedList = new LinkedList<String>();
         //set value
@@ -80,7 +82,7 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 - O(1) insert
 - O(1) checking whether it contains a value
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         Set<String> mySet = new HashSet<String>();
         mySet.add("Book");
@@ -101,7 +103,7 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 
 ## Bitmap
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         BitSet myBitSet  = new BitSet(1);
         System.out.println(myBitSet.size());   //64
@@ -134,7 +136,7 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 - O(1) to remove the top of the stack (pop)
 - O(N) to iterate
 
- <details><summary>代码1</summary>
+ <details><summary>code1</summary>
  <pre><code>
          Stack<String> myStack = new Stack<>();
         myStack.push("Apple");
@@ -155,7 +157,7 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 </details>
 
 
- <details><summary>代码2</summary>
+ <details><summary>code2</summary>
  <pre><code>
         Deque<String> myStack2 = new ArrayDeque<String>();
         myStack2.push("Apple");
@@ -172,7 +174,7 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 - O(N) to look for a particular value
 
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         Map<String, Integer> myMap = new HashMap<>();
         myMap.put("T.Rex", 100);
@@ -197,7 +199,7 @@ TODO
 - O(1) to remove the front of the queue (poll)
 - O(N) to iterate
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         Queue<String> myQueue = new LinkedList<String>();
         myQueue.add("Box");
@@ -229,7 +231,7 @@ TODO
 - O(1) Accessing smallest element
 - O(log(n)) Removing biggest element	
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
        Queue<Integer> logic = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
@@ -255,7 +257,7 @@ TODO
 - O(logn) Delete complexity
 - O(logn) Insert complexity
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         ConcurrentSkipListMap<Integer, String> mySkipListMap = new ConcurrentSkipListMap<Integer, String>();
         System.out.println(mySkipListMap);
@@ -277,7 +279,7 @@ TODO
 - O(logn) Search
 - O(logn) Deletion
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         TreeMap<Integer, String> myTreeMap = new TreeMap<Integer, String>();
         myTreeMap.put(2,"2");
@@ -293,7 +295,7 @@ Trie 树，也叫“字典树”。顾名思义，它是一个树形结构。它
 - O(n) build tree n 表示所有字符串的长度和
 - O(k) k 表示查找的字符串长度
 
- <details><summary>代码</summary>
+ <details><summary>code</summary>
  <pre><code>
         class Trie
         {
