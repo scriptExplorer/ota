@@ -176,6 +176,9 @@ Vector特点是随机访问速度快，插入和移除性能较差。该类可�
 - O(1) check if it contains certain Key
 - O(N) to look for a particular value
 
+ <details><summary>desc</summary>
+散列表：插入删除查找都是O(1), 是最常用的，但其缺点是不能顺序遍历以及扩容缩容的性能损耗。适用于那些不需要顺序遍历，数据更新不那么频繁的。
+</details>
 
  <details><summary>code</summary>
  <pre><code>
@@ -277,6 +280,15 @@ TODO
 - O(logn) Delete complexity
 - O(logn) Insert complexity
 
+ <details><summary>desc</summary>
+ 跳表：插入删除查找都是O(logn), 并且能顺序遍历。缺点是空间复杂度O(n)。适用于不那么在意内存空间的，其顺序遍历和区间查找非常方便。
+<img width="634" alt="image" src="https://user-images.githubusercontent.com/824476/196645763-1d62d292-5829-45b1-a055-54db5bec9a7f.png">
+
+下面是一个包含 64 个结点的链表，按照前面讲的这种思路，建立了五级索引。原来没有索引的时候，查找 62 需要遍历 62 个结点，现在只需要遍历 11 个结点。
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/824476/196646274-74dec644-4eac-457f-96df-d9b2408594ed.png">
+
+</details>
+
  <details><summary>code</summary>
  <pre><code>
         ConcurrentSkipListMap<Integer, String> mySkipListMap = new ConcurrentSkipListMap<Integer, String>();
@@ -298,6 +310,11 @@ TODO
 - O(logn) Insert
 - O(logn) Search
 - O(logn) Deletion
+
+
+ <details><summary>desc</summary>
+插入删除查找都是O(logn), 中序遍历即是顺序遍历，稳定。缺点是难以实现，
+</details>
 
  <details><summary>code</summary>
  <pre><code>
